@@ -75,5 +75,5 @@ RUN set -e; \
 RUN swift --version
 
 # Remove unused packages
-RUN apt-get purge --auto-remove meson ninja-build cmake
+RUN apt-get purge --auto-remove -y meson ninja-build cmake
 

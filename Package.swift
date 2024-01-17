@@ -14,12 +14,12 @@ let package = Package(
     targets: [
         .systemLibrary(
             name: "libcamera",
-            pkgConfig: "libcamera",
-            swiftSettings: [.interoperabilityMode(.Cxx)]
+            pkgConfig: "libcamera"
         ),
         .executableTarget(
             name: "examples",
-            dependencies: ["libcamera"]
+            dependencies: ["libcamera"],
+            swiftSettings: [.interoperabilityMode(.Cxx)]
         )
     ]
 )
