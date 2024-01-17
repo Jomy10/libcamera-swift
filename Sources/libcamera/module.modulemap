@@ -1,0 +1,5 @@
+module libcamera {
+  umbrella header "libcamera.hpp"
+  link "camera"
+}
+
